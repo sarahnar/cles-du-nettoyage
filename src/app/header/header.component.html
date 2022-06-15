@@ -1,0 +1,18 @@
+<section [ngClass]="{'lg:h-screen': image}" class="lg:h-screen flex flex-col">
+  <div class="max-w-4xl m-auto">
+    <div class="flex w-full max-w-4xl py-4 flex-row space-x-4 items-center">
+      <img src="assets/logo.png" class="w-16">
+      <h1 class="text-4xl uppercase"><a href="/">Les clés du nettoyage</a></h1>
+    </div>
+  </div>
+  <div id="menu" class="flex w-full py-4 flex-row bg-teal-600 text-white">
+    <div class="flex w-5/6 m-auto py-2 px-8 flex-row space-x-16 items-center justify-center">
+      <a href="/#qui-sommes-nous" class="text-2xl">Présentation</a>
+      <a href="/#services" class="text-2xl">Services</a>
+      <!-- <a href="#temoignages" class="text-2xl">Témoignages</a> -->
+      <a href="/#contact" class="text-2xl">Contact</a>
+    </div>
+  </div>
+
+  <div *ngIf="image" class="w-full hidden lg:flex lg:flex-1 bg-[url('assets/carousel-4.jpg')] bg-cover"></div>
+</section>
