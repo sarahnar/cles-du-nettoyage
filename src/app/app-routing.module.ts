@@ -6,12 +6,12 @@ import { MentionComponent } from './mention/mention.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
   },
   {
     path: 'mention-legale',
-    component: MentionComponent
-  }
+    component: MentionComponent,
+  },
 ];
 
 @NgModule({

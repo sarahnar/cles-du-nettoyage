@@ -1,16 +1,16 @@
 <section [ngClass]="{'lg:h-screen': image}" class="lg:h-screen flex flex-col">
   <div class="max-w-4xl m-auto">
-    <div class="flex w-full max-w-4xl py-4 flex-row space-x-4 items-center">
+    <a routerLink="/" class="flex w-full max-w-4xl py-4 flex-row space-x-4 items-center">
       <img src="assets/logo.png" class="w-16">
-      <h1 class="text-4xl uppercase"><a href="/">Les clés du nettoyage</a></h1>
-    </div>
+      <h1 class="text-4xl uppercase">Les clés du nettoyage</h1>
+    </a>
   </div>
   <div id="menu" class="flex w-full py-4 flex-row bg-teal-600 text-white">
     <div class="w-full max-w-4xl flex m-auto py-2 px-8 flex-col md:flex-row md:space-x-16 md:items-center md:justify-center">
-      <a href="/#qui-sommes-nous" class="text-2xl">Présentation</a>
-      <a href="/#services" class="text-2xl">Services</a>
+      <a routerLink="/" fragment="presentation" class="text-2xl">Présentation</a>
+      <a routerLink="/" fragment="services" class="text-2xl">Services</a>
       <!-- <a href="#temoignages" class="text-2xl">Témoignages</a> -->
-      <a href="/#contact" class="text-2xl">Contact</a>
+      <a routerLink="/" fragment="contact" class="text-2xl">Contact</a>
     </div>
   </div>
 
